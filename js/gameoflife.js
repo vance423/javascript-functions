@@ -39,7 +39,7 @@ const printCells = (state) => {
     for (let x = bottomLeft[0]; x <= topRight[0]; x++){
       row.push(printCell([x,y], state));
     }
-    accumulator += ResizeObserver.join(" ") + "\n"
+    accumulator += row.join(" ") + "\n";
   }
   return accumulator;
 };
